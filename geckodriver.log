@@ -5985,3 +5985,22 @@ IPDL protocol error: Handler returned error code!
 
 ###!!! [Child][MessageChannel] Error: (msgtype=0xF00004,name=PVsync::Msg_Unobserve) Channel error: cannot send/recv
 
+1498487287076	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1498487287077	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 6.6.0
+1498487287079	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1498487287080	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.50
+1498487287081	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1498487287248	addons.manager	DEBUG	shutdown
+1498487287249	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1498487287249	addons.xpi	DEBUG	shutdown
+1498487287249	addons.xpi-utils	DEBUG	shutdown
+1498487287250	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1498487287251	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1498487287254	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1498487287255	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1498487287258	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1498487287261	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1498487287267	addons.manager	DEBUG	Async provider shutdown done
+JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+1498487287523	Marionette	INFO	Ceased listening
