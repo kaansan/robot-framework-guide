@@ -1,8 +1,8 @@
 ### Robot Framework User Guide
 
-A Robot framework guide for newbies.__
+A Robot framework guide for newbies.  
 This guide purpose is for lazy programmers who
-don't want to read docs or anything about robot.__
+don't want to read docs or anything about robot.  
 It is simple and easy to understand.
 
 ### Requirements
@@ -38,8 +38,8 @@ Running tests
 
 ### Guide 101
 
-The thing is on robot framework : __
-Making testing much simpler and easy and on other hand __
+The thing is on robot framework :  
+Making testing much simpler and easy and on other hand  
 robot framework has cool test reports.
 When you run tests , robot creates reports.
 
@@ -48,6 +48,5 @@ When you run tests , robot creates reports.
 * Create a file.robot , you should use .robot extension
 * Write your test cases on that file
 * and run with
-        $ robot file-name.robot
 
-        
+        $ robot file-name.robot
