@@ -11,7 +11,7 @@ ${DELAY}          3s
 *** Test Cases ***
 FindShapeOfYou
         Open Youtube
-        Search For Ed
+        Search For Ed Sheeran
         Click For Shape Of You
         sleep         ${DELAY}
         Close Browser
@@ -25,7 +25,7 @@ SearchTupac
 *** Keywords ***
 Open Youtube
         Open Browser    ${YOUTUBE_URL}     ${BROWSER}
-Search For Ed
+Search For Ed Sheeran
         Input Text    masthead-search-term    ed sheeran
 Click For Shape Of You
         Click Link    Ed Sheeran - Shape of You [Official Video]
