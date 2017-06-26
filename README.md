@@ -40,7 +40,7 @@ Running tests
 
 The thing is on robot framework :  
 Making testing much simpler and easy and on other hand  
-robot framework has cool test reports.
+robot framework has cool test reports.  
 When you run tests , robot creates reports.
 
 ### How can I use and run robot and tests
@@ -49,4 +49,33 @@ When you run tests , robot creates reports.
 * Write your test cases on that file
 * and run with
 
-        $ robot file-name.robot
+  $ robot file-name.robot
+
+### Concept of Robot framework
+
+* Settings
+* Variables
+* Test cases
+* Keywords
+
+### Settings
+
+Where you can import libraries like Selenium2Library
+
+Example :
+
+  $ Library       Selenium2Library
+
+Notice that between 'Library' and 'Selenium2Library'  
+have 4 spaces.
+
+### Variables
+
+Where you can , define variables for Test Cases and Keywords
+You can define variables like ...
+Example :
+
+  $ {BROWSER}       Firefox
+  $ {SITEURL}       http://www.google.com
+
+     
