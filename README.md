@@ -86,8 +86,8 @@ You can define variables like ...
 Example :
 
       *** Variables ***
-      {BROWSER}       Firefox
-      {SITEURL}       http://www.google.com
+      ${BROWSER}       Firefox
+      ${SITEURL}       http://www.google.com
 
 
 ### *** Test Cases ***
