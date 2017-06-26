@@ -70,9 +70,9 @@ When you run tests , robot creates reports.
 Where you can import libraries like Selenium2Library
 
 Example :
-*** Settings ***
 
-    $ Library       Selenium2Library
+      *** Settings ***
+      Library       Selenium2Library
 
 Notice that between 'Library' and 'Selenium2Library'  
 have 4 spaces.
@@ -84,10 +84,9 @@ Where you can , define variables for Test Cases and Keywords
 You can define variables like ...
 Example :
 
-*** Variables ***
-
-    $ {BROWSER}       Firefox
-    $ {SITEURL}       http://www.google.com
+      *** Variables ***
+      {BROWSER}       Firefox
+      {SITEURL}       http://www.google.com
 
 
 ### Test Cases
@@ -96,14 +95,14 @@ This section for writing test cases
 
 Example :
 
-*** Test Cases ***
+        *** Test Cases ***
 
-FindShapeOfYou  
-      Open Browser  
-      Search For Ed  
-      Click For Shape Of You  
-      sleep       ${DELAY}  
-      [Teardown]      Close Browser
+        FindShapeOfYou  
+                Open Browser  
+                Search For Ed  
+                Click For Shape Of You  
+                sleep       ${DELAY}  
+                [Teardown]      Close Browser
 
 
 Note :
@@ -120,16 +119,16 @@ You can give their parameter some arguments and use them.
 
 Example :
 
-*** Keywords ***
+        *** Keywords ***
 
-Open Browser  
-        Selenium2Library.Open Browser   ${SITEURL}    ${BROWSER}  
+        Open Browser  
+                Selenium2Library.Open Browser   ${SITEURL}    ${BROWSER}  
 
-Search For Ed  
-        Input Text    [id-or-some-locator-of-element]   ed sheeran  
+        Search For Ed  
+                Input Text    [id-or-some-locator-of-element]   ed sheeran  
 
-Click For Shape Of You  
-        Click Link     Ed Sheeran - Shape of You [Official Video]  
+        Click For Shape Of You  
+                Click Link     Ed Sheeran - Shape of You [Official Video]  
 
 
 Notice that , you shouldn't forget using 4 spaces when defining anything  
