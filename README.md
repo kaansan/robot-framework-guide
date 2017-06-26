@@ -23,7 +23,7 @@ Clone the repository
 
 Change directory and set virtualenv to your folder
 
-    $ cd ../robot-framework-guide
+    $ cd ../robot-framework-guide-master
     $ setvirtualenvproject
 
 Install Requirements

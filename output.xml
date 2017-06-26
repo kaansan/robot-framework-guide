@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170626 14:06:52.877" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<robot generated="20170626 14:45:53.795" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
 <suite source="/home/kaan/Documents/robot-frame/TestCase.robot" id="s1" name="TestCase">
 <test id="s1-t1" name="GetGoogle">
 <kw name="Open Browser">
@@ -9,10 +9,10 @@
 <arg>${SITEURL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170626 14:06:53.008" level="INFO">Opening browser 'Firefox' to base url 'http://www.youtube.com'</msg>
-<status status="PASS" endtime="20170626 14:07:11.693" starttime="20170626 14:06:53.008"></status>
+<msg timestamp="20170626 14:45:53.894" level="INFO">Opening browser 'Firefox' to base url 'http://www.youtube.com'</msg>
+<status status="PASS" endtime="20170626 14:46:06.319" starttime="20170626 14:45:53.893"></status>
 </kw>
-<status status="PASS" endtime="20170626 14:07:11.694" starttime="20170626 14:06:53.007"></status>
+<status status="PASS" endtime="20170626 14:46:06.319" starttime="20170626 14:45:53.893"></status>
 </kw>
 <kw name="Search For Ed">
 <kw name="Input Text" library="Selenium2Library">
@@ -21,26 +21,37 @@
 <arg>masthead-search-term</arg>
 <arg>ed sheeran</arg>
 </arguments>
-<msg timestamp="20170626 14:07:11.695" level="INFO">Typing text 'ed sheeran' into text field 'masthead-search-term'</msg>
-<status status="PASS" endtime="20170626 14:07:12.031" starttime="20170626 14:07:11.695"></status>
+<msg timestamp="20170626 14:46:06.321" level="INFO">Typing text 'ed sheeran' into text field 'masthead-search-term'</msg>
+<status status="PASS" endtime="20170626 14:46:06.531" starttime="20170626 14:46:06.321"></status>
 </kw>
-<status status="PASS" endtime="20170626 14:07:12.031" starttime="20170626 14:07:11.694"></status>
+<status status="PASS" endtime="20170626 14:46:06.531" starttime="20170626 14:46:06.320"></status>
+</kw>
+<kw name="Click For Shape Of You">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>Ed Sheeran - Shape of You [Official Video]</arg>
+</arguments>
+<msg timestamp="20170626 14:46:06.532" level="INFO">Clicking link 'Ed Sheeran - Shape of You [Official Video]'.</msg>
+<status status="PASS" endtime="20170626 14:46:06.989" starttime="20170626 14:46:06.532"></status>
+</kw>
+<status status="PASS" endtime="20170626 14:46:06.989" starttime="20170626 14:46:06.532"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<msg timestamp="20170626 14:07:17.032" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170626 14:07:17.032" starttime="20170626 14:07:12.031"></status>
+<msg timestamp="20170626 14:46:11.990" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170626 14:46:11.991" starttime="20170626 14:46:06.990"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170626 14:07:17.283" starttime="20170626 14:07:17.033"></status>
+<status status="PASS" endtime="20170626 14:46:12.218" starttime="20170626 14:46:11.991"></status>
 </kw>
-<status status="PASS" endtime="20170626 14:07:17.283" critical="yes" starttime="20170626 14:06:53.007"></status>
+<status status="PASS" endtime="20170626 14:46:12.218" critical="yes" starttime="20170626 14:45:53.892"></status>
 </test>
-<status status="PASS" endtime="20170626 14:07:17.284" starttime="20170626 14:06:52.879"></status>
+<status status="PASS" endtime="20170626 14:46:12.219" starttime="20170626 14:45:53.796"></status>
 </suite>
 <statistics>
 <total>
