@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170626 14:45:53.795" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<robot generated="20170626 17:22:39.931" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
 <suite source="/home/kaan/Documents/robot-frame/TestCase.robot" id="s1" name="TestCase">
-<test id="s1-t1" name="GetGoogle">
-<kw name="Open Browser">
+<test id="s1-t1" name="FindShapeOfYou">
+<kw name="Open Youtube">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
-<arg>${SITEURL}</arg>
+<arg>${YOUTUBE_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170626 14:45:53.894" level="INFO">Opening browser 'Firefox' to base url 'http://www.youtube.com'</msg>
-<status status="PASS" endtime="20170626 14:46:06.319" starttime="20170626 14:45:53.893"></status>
+<msg timestamp="20170626 17:22:40.030" level="INFO">Opening browser 'Firefox' to base url 'http://www.youtube.com'</msg>
+<status status="PASS" endtime="20170626 17:22:50.640" starttime="20170626 17:22:40.029"></status>
 </kw>
-<status status="PASS" endtime="20170626 14:46:06.319" starttime="20170626 14:45:53.893"></status>
+<status status="PASS" endtime="20170626 17:22:50.641" starttime="20170626 17:22:40.029"></status>
 </kw>
 <kw name="Search For Ed">
 <kw name="Input Text" library="Selenium2Library">
@@ -21,10 +21,10 @@
 <arg>masthead-search-term</arg>
 <arg>ed sheeran</arg>
 </arguments>
-<msg timestamp="20170626 14:46:06.321" level="INFO">Typing text 'ed sheeran' into text field 'masthead-search-term'</msg>
-<status status="PASS" endtime="20170626 14:46:06.531" starttime="20170626 14:46:06.321"></status>
+<msg timestamp="20170626 17:22:50.643" level="INFO">Typing text 'ed sheeran' into text field 'masthead-search-term'</msg>
+<status status="PASS" endtime="20170626 17:22:50.880" starttime="20170626 17:22:50.642"></status>
 </kw>
-<status status="PASS" endtime="20170626 14:46:06.531" starttime="20170626 14:46:06.320"></status>
+<status status="PASS" endtime="20170626 17:22:50.880" starttime="20170626 17:22:50.641"></status>
 </kw>
 <kw name="Click For Shape Of You">
 <kw name="Click Link" library="Selenium2Library">
@@ -32,36 +32,75 @@
 <arguments>
 <arg>Ed Sheeran - Shape of You [Official Video]</arg>
 </arguments>
-<msg timestamp="20170626 14:46:06.532" level="INFO">Clicking link 'Ed Sheeran - Shape of You [Official Video]'.</msg>
-<status status="PASS" endtime="20170626 14:46:06.989" starttime="20170626 14:46:06.532"></status>
+<msg timestamp="20170626 17:22:50.881" level="INFO">Clicking link 'Ed Sheeran - Shape of You [Official Video]'.</msg>
+<status status="PASS" endtime="20170626 17:22:51.340" starttime="20170626 17:22:50.881"></status>
 </kw>
-<status status="PASS" endtime="20170626 14:46:06.989" starttime="20170626 14:46:06.532"></status>
+<status status="PASS" endtime="20170626 17:22:51.340" starttime="20170626 17:22:50.880"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<msg timestamp="20170626 14:46:11.990" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170626 14:46:11.991" starttime="20170626 14:46:06.990"></status>
+<msg timestamp="20170626 17:22:54.342" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170626 17:22:54.342" starttime="20170626 17:22:51.340"></status>
 </kw>
-<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170626 14:46:12.218" starttime="20170626 14:46:11.991"></status>
+<status status="PASS" endtime="20170626 17:22:54.572" starttime="20170626 17:22:54.342"></status>
 </kw>
-<status status="PASS" endtime="20170626 14:46:12.218" critical="yes" starttime="20170626 14:45:53.892"></status>
+<status status="PASS" endtime="20170626 17:22:54.572" critical="yes" starttime="20170626 17:22:40.028"></status>
 </test>
-<status status="PASS" endtime="20170626 14:46:12.219" starttime="20170626 14:45:53.796"></status>
+<test id="s1-t2" name="SearchImages">
+<kw name="Open Google">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${GOOGLE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170626 17:22:54.576" level="INFO">Opening browser 'Firefox' to base url 'http://www.google.com'</msg>
+<status status="PASS" endtime="20170626 17:23:05.302" starttime="20170626 17:22:54.575"></status>
+</kw>
+<status status="PASS" endtime="20170626 17:23:05.303" starttime="20170626 17:22:54.575"></status>
+</kw>
+<kw name="Search For Tupac">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>lst-ib</arg>
+<arg>Tupac Amaru Shakur</arg>
+</arguments>
+<msg timestamp="20170626 17:23:05.304" level="INFO">Typing text 'Tupac Amaru Shakur' into text field 'lst-ib'</msg>
+<status status="PASS" endtime="20170626 17:23:05.596" starttime="20170626 17:23:05.304"></status>
+</kw>
+<status status="PASS" endtime="20170626 17:23:05.596" starttime="20170626 17:23:05.303"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<msg timestamp="20170626 17:23:08.598" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170626 17:23:08.598" starttime="20170626 17:23:05.597"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170626 17:23:08.851" starttime="20170626 17:23:08.599"></status>
+</kw>
+<status status="PASS" endtime="20170626 17:23:08.852" critical="yes" starttime="20170626 17:22:54.574"></status>
+</test>
+<status status="PASS" endtime="20170626 17:23:08.854" starttime="20170626 17:22:39.933"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="TestCase" pass="1">TestCase</stat>
+<stat fail="0" id="s1" name="TestCase" pass="2">TestCase</stat>
 </suite>
 </statistics>
 <errors>
