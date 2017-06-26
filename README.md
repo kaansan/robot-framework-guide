@@ -1,8 +1,8 @@
 ### Robot Framework User Guide
 <img src="robot.png" width="200">
-A Robot framework guide for newbies.  
+A Robot framework guide for newbies.    
 This guide purpose is for lazy programmers who
-don't want to read boring robot documentation or anything about robot.  
+don't want to read boring robot documentation or anything about robot.    
 This guide is simple and easy to understand.
 
 
